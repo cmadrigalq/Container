@@ -2,10 +2,14 @@ package container.moviles.com.contenedores;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.RadioButton;
+import android.view.View;
+import android.webkit.WebView;
+import android.widget.AdapterView;
+import android.widget.GridView;
+import android.widget.TabHost;
 
 public class Contenedores extends AppCompatActivity {
-    RadioButton r1 = (RadioButton) findViewById(R.id.Radio1);
+    //RadioButton r1 = (RadioButton) findViewById(R.id.Radio1);
     /*RadioButton r2 = (RadioButton) findViewById(R.id.Radio2);
     RadioButton r3 = (RadioButton) findViewById(R.id.Radio3);
     RadioButton r4 = (RadioButton) findViewById(R.id.radio4);
@@ -45,29 +49,29 @@ public class Contenedores extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contenedore);
-        //init();
+        init();
         //BotonClases();
     }
-/*
+
     void init() {
         TabHost th = (TabHost) super.findViewById(R.id.host);
         th.setup();
-        TabSpec ts1 = th.newTabSpec("t1");
+        TabHost.TabSpec ts1 = th.newTabSpec("t1");
         ts1.setIndicator("CLASES");
         ts1.setContent(R.id.Radio_Group);
         th.addTab(ts1);
 
-       TabSpec ts2 = th.newTabSpec("t2");
+        TabHost.TabSpec ts2 = th.newTabSpec("t2");
         ts2.setIndicator("HORARIOS");
         ts2.setContent(R.id.ListView);
         th.addTab(ts2);
 
-        TabSpec ts3 = th.newTabSpec("t3");
+        TabHost.TabSpec ts3 = th.newTabSpec("t3");
         ts3.setIndicator("GALERIA");
         ts3.setContent(R.id.Grid);
         th.addTab(ts3);
 
-        TabSpec ts4 = th.newTabSpec("t4");
+        TabHost.TabSpec ts4 = th.newTabSpec("t4");
         ts4.setIndicator("RUTINAS");
         ts4.setContent(R.id.WebV);
         th.addTab(ts4);
@@ -85,7 +89,7 @@ public class Contenedores extends AppCompatActivity {
         });
     }
 
-
+/*
 
     public void onRadioButtonChecked(View view) {
         boolean checked = ((RadioButton) view ).isChecked();

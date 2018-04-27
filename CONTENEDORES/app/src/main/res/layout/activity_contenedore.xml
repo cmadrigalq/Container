@@ -3,14 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
     tools:context="container.moviles.com.contenedores.Contenedores">
 
     <TabHost
         android:id="@+id/host"
         android:layout_width="384dp"
         android:layout_height="515dp"
-        android:background="@android:color/holo_green_dark"
         android:soundEffectsEnabled="true"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="-2dp">
@@ -25,7 +23,6 @@
                 style="@android:style/Animation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/darker_gray"
                 android:clickable="true"
                 android:divider="@android:color/background_dark"
                 android:showDividers="middle" />
@@ -51,7 +48,6 @@
                     android:id="@+id/Radio_Group"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@android:color/holo_green_light"
                     android:orientation="vertical">
 
                     <ScrollView
@@ -112,13 +108,6 @@
                                     android:layout_weight="1"
                                     android:text="Zumba" />
 
-                                <Button
-                                    android:id="@+id/btn"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Ver horario de clases" />
-
                             </RadioGroup>
 
                         </LinearLayout>
@@ -130,7 +119,6 @@
                     android:id="@+id/ListView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@android:color/holo_green_light"
                     android:orientation="vertical">
 
                     <ListView
@@ -143,7 +131,6 @@
                     android:id="@+id/Grid"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@android:color/holo_green_light"
                     android:orientation="vertical">
 
 
