@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -26,7 +25,7 @@
                 style="@android:style/Animation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#c48bf0"
+                android:background="@android:color/darker_gray"
                 android:clickable="true"
                 android:divider="@android:color/background_dark"
                 android:showDividers="middle" />
@@ -35,39 +34,6 @@
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:id="@+id/SV"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@android:color/transparent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editText"
-                        style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
-                        android:layout_width="match_parent"
-                        android:layout_height="37dp"
-                        android:autoText="true"
-                        android:background="@android:color/background_light"
-                        android:bufferType="spannable"
-                        android:ems="10"
-                        android:inputType="textNoSuggestions"
-                        android:selectAllOnFocus="false"
-                        android:singleLine="false"
-                        android:text="Introduzca la palabra o una frase que desee buscar...!"
-                        android:textAppearance="@style/TextAppearance.AppCompat"
-                        android:textStyle="bold"
-                        android:visibility="visible" />
-
-                    <SearchView
-                        android:id="@+id/sv"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="#e0f495"
-                        android:visibility="visible" />
-
-                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/WebV"
@@ -88,23 +54,6 @@
                     android:background="@android:color/holo_green_light"
                     android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/editText2"
-                        style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
-                        android:layout_width="match_parent"
-                        android:layout_height="37dp"
-                        android:autoText="true"
-                        android:background="@android:color/background_light"
-                        android:bufferType="spannable"
-                        android:ems="10"
-                        android:inputType="textNoSuggestions"
-                        android:selectAllOnFocus="false"
-                        android:singleLine="false"
-                        android:text="Algunos países del mundo"
-                        android:textAppearance="@style/TextAppearance.AppCompat"
-                        android:textStyle="bold"
-                        android:visibility="visible" />
-
                     <ScrollView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -116,6 +65,7 @@
                             android:orientation="vertical">
 
                             <RadioGroup
+                                android:id="@+id/rg"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1">
@@ -125,182 +75,49 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Afganistán" />
+                                    android:text="Yoga" />
 
                                 <RadioButton
-                                    android:id="@+id/Radio_2"
+                                    android:id="@+id/Radio2"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Bután" />
+                                    android:text="Pilates" />
 
                                 <RadioButton
-                                    android:id="@+id/Radio_3"
+                                    android:id="@+id/Radio3"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Camerún" />
+                                    android:text="Entrenamiento funcional" />
 
                                 <RadioButton
-                                    android:id="@+id/radioButton16"
-                                    android:layout_width="match_parent"
+                                    android:id="@+id/radio4"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Dinamarca" />
+                                    android:text="Crossfit" />
 
                                 <RadioButton
-                                    android:id="@+id/radioButton26"
-                                    android:layout_width="match_parent"
+                                    android:id="@+id/radio5"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Ecuador" />
+                                    android:text="Danza" />
 
                                 <RadioButton
-                                    android:id="@+id/radioButton25"
-                                    android:layout_width="match_parent"
+                                    android:id="@+id/radio6"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Filipinas" />
+                                    android:text="Zumba" />
 
-                                <RadioButton
-                                    android:id="@+id/radioButton24"
-                                    android:layout_width="match_parent"
+                                <Button
+                                    android:id="@+id/btn"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Gabón" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton23"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Haití" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton22"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Indonesia" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton21"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Jamaica" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton20"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Kazajistán" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton19"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Laos" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton18"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Madagascar" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton17"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Namibia" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton15"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Omán" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton14"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Pakistán" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton13"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Reino Unido" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton12"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Samoa" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton11"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Tailandia" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton10"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Ucrania" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton9"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Vanuatu" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton8"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Yemen" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton7"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Zambia" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton6"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Zimbabue" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton5"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Kuwait" />
-
-                                <RadioButton
-                                    android:id="@+id/radioButton4"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Angola" />
+                                    android:text="Ver horario de clases" />
 
                             </RadioGroup>
 
@@ -316,23 +133,6 @@
                     android:background="@android:color/holo_green_light"
                     android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/editText3"
-                        style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
-                        android:layout_width="match_parent"
-                        android:layout_height="37dp"
-                        android:autoText="true"
-                        android:background="@android:color/background_light"
-                        android:bufferType="spannable"
-                        android:ems="10"
-                        android:inputType="textNoSuggestions"
-                        android:selectAllOnFocus="false"
-                        android:singleLine="false"
-                        android:text="Cantones de Costa Rica"
-                        android:textAppearance="@style/TextAppearance.AppCompat"
-                        android:textStyle="bold"
-                        android:visibility="visible" />
-
                     <ListView
                         android:id="@+id/Lista"
                         android:layout_width="match_parent"
@@ -346,22 +146,7 @@
                     android:background="@android:color/holo_green_light"
                     android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/editText4"
-                        style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
-                        android:layout_width="match_parent"
-                        android:layout_height="37dp"
-                        android:autoText="true"
-                        android:background="@android:color/background_light"
-                        android:bufferType="spannable"
-                        android:ems="10"
-                        android:inputType="textNoSuggestions"
-                        android:selectAllOnFocus="false"
-                        android:singleLine="false"
-                        android:text="Productos"
-                        android:textAppearance="@style/TextAppearance.AppCompat"
-                        android:textStyle="bold"
-                        android:visibility="visible" />
+
 
                     <GridView xmlns:android="http://schemas.android.com/apk/res/android"
                         android:id="@+id/gridview1"
