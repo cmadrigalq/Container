@@ -108,6 +108,13 @@
                                     android:layout_weight="1"
                                     android:text="Zumba" />
 
+                                <Button
+                                    android:id="@+id/btn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Ver horario de clase." />
+
                             </RadioGroup>
 
                         </LinearLayout>
@@ -140,7 +147,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:columnWidth="90dp"
-                        android:foreground="@android:color/holo_green_dark"
                         android:gravity="center"
                         android:horizontalSpacing="15dp"
                         android:numColumns="auto_fit"
